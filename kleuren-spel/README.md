@@ -2,69 +2,110 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Inleiding
+We zijn benieuwd hoe jij een interactieve, gebruiksvriendelijke applicatie bouwt. De nadruk ligt op gebruikservaring en code kwaliteit, niet op perfectie.
 
-### `npm start`
+Deze opdracht bestaat uit het bouwen van een kleurherkenningsspel met twee verschillende speelmodi. Je mag zelf kiezen welke modi je implementeert
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projectbeschrijving
+Bouw een interactief kleurherkenningsspel in React/TypeScript (of ander modern JavaScript framework). De applicatie moet gebruikers twee verschillende spelmanier aanbieden:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Modus 1: Kleurherhaling
+Het systeem toont een reeks van willekeurige kleuren in volgorde. De gebruiker moet deze exacte volgorde reproduceren door op de knoppen te klikken. Na elke succesvolle ronde wordt een nieuwe kleur aan de reeks toegevoegd, zodat de moeilijkheid stijgt.
 
-### `npm test`
+Spelflow:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ronde 1: Systeem toont 1 kleur → Gebruiker herhaalt
+Ronde 2: Systeem toont 2 kleuren → Gebruiker herhaalt
+Ronde 3: Systeem toont 3 kleuren → Gebruiker herhaalt
+En zo voort totdat de gebruiker een fout maakt
+Modus 2: Kleur Reactietijd
+Het systeem toont een grid van 6-8 kleuren en een willekeurige kleurnaam (tekstueel) bovenaan. De gebruiker moet zo snel mogelijk de juiste kleur in het grid aanraken/klikken. De applicatie meet de reactietijd per kleur.
 
-### `npm run build`
+Spelflow:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tekst toont: "Rood" voor een x aantal seconden
+Gebruiker klikt op rood
+Systeem meet de reactietijd, geeft feedback (score bij correct aan klikken en fout bij het verkeerd of te laat aanklikken), en toont de volgende kleur
+Na 10 rondes eindigt het spel
+Vereisten (Must-have)
+Beide Speelmodi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Duidelijke spelregels/uitleg voordat het spel begint
+Score bijhouden tijdens het spel (aantal fouten, aantal succesvolle rondes, etc.)
+Eindscore/samenvatting weergeven aan het einde van elke speelsessie
+Mogelijkheid om het spel opnieuw te starten
+Visueel aantrekkelijke, intuïtieve UI
+Kleurherhaling:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Weergave van kleuren als klikbare knoppen
+Visuele/auditieve feedback bij correct/incorrect antwoord
+Progressieve moeilijkheid (steeds meer kleuren per ronde)
+Duidelijke indicatie van huidige ronde/score
+Kleur Reactietijd:
 
-### `npm run eject`
+Grid met kleuren
+Tekstuele weergave van de te kiezen kleur bovenaan
+Reactietijd meten en weergeven
+Duidelijke feedback bij correct/incorrect antwoord
+10 rondes per speelsessie
+Nice-to-have (Bonuspunten)
+Responsive Design: Werkt goed op desktop, tablet en mobiel
+Moeilijkheidsniveaus: Licht, Normaal, Moeilijk (bijv. sneller tempo, meer kleuren, subtielere kleurverschillen)
+Highscore Opslaan: Gebruik localStorage om highscores bij te houden en weer te geven
+Geluiden: Optionele geluidsfeedback bij correcte/incorrecte antwoorden
+Animaties: Vloeiende, subtiele animaties voor betere UX
+Statistieken: Gemiddelde reactietijd, best gesture, etc.
+Dark Mode: Optionele donkere modus
+Technische Vereisten
+Taal: JavaScript met voorkeur voor TypeScript
+Framework: Voorkeur voor React, maar andere moderne frameworks (Vue, Svelte) zijn welkom
+Styling: Gebruik CSS, SCSS, Tailwind, CSS-in-JS of wat je prefereert
+Tooling: Create React App, Vite, Next.js of vergelijkbaar
+Browser-compatibiliteit: Moderne browsers (Chrome, Firefox, Safari, Edge)
+Design kenmerken
+Net als in de praktijk hebben wij vaak te maken met een styleguide met daarin design richtlijnen.
+Zorg ervoor dat de onderdelen uit de styleguide terug komen in je design
+Je bent vrij om “kleine” aanpassingen door te voeren als hier een goede reden voor is. Geef daarom aan als je afwijkt.
+De basis van je design is gebaseerd op wit en zwart (Carbon). Dit omdat het een kleurrijke applicatie gaat worden en je een sterke neutrale basis wilt hebben.
+Je mag andere iconen toevoegen mocht dit nodig zijn.
+Zorg ervoor dat het logo ook terug komt in je ontwerp, je mag zelf een leuke naam bedenken!
+Beoordeling & Inlevering
+We letten op:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Gebruiksvriendelijkheid: Is het spel intuïtief en aangenaam te spelen?
+Code Kwaliteit: Is de code leesbaar, goed gestructureerd en onderhoudbaar?
+React/TypeScript Kennis: Hoe gebruik je React hooks, state management, TypeScript types?
+Design & UI/UX: Ziet het er professioneel uit? Werkt het goed op alle apparaten?
+Prioriteitenstelling: Welke features heb je eerst gebouwd? Wat heb je weggelaten en waarom?
+Inlevering:
+GitHub Repository met:
+Clean, duidelijke commit history
+README.md met installatie- en opstartinstructies
+Werkende applicatie (lokaal draaiend of deployed)
+Mondeling Toelichting (15-20 minuten):
+Uitleg over je aanpak en architectuur
+Welke keuzes heb je gemaakt en waarom?
+Waar lag de prioriteit?
+Wat zou je anders willen doen of nog verbeteren met meer tijd?
+Tijdbudget: 2-4 uur
+Dit is een indicatie. Het hoeft niet volmaakt te zijn. We zijn meer geïnteresseerd in:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Je werkwijze en keuzes
+Hoe je probleem oplost
+Wat je prioriteert
+Dan in een 100% afgerond product.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Samenvatting
+Maak binnen 4 uur één of beide speelmodi van het kleurherkenningsspel met JavaScript/TypeScript en React (of ander framework naar keuze).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+De opdracht ziet er fors uit, maar dat is opzet. Kies wat je oppakt, werk aan wat je goed ligt, en zorg dat wat je inlevert solid is. Denk goed na over wat je prioriteert en hoe je het zou aanpakken met meer tijd.
 
-## Learn More
+Praktische tips:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start met één speelmodus en zorg dat deze basis goed werkt
+Focus eerst op core gameplay (het spel speelbaar maken), styling en extra's komen erna
+Commit regelmatig naar Git — je werkproces zegt meer dan het eindresultaat
+Test even op mobiel zodat je weet hoe het voelt
+Niet alles hoeft af en niet alles hoeft perfect te zijn
