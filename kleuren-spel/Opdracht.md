@@ -2,7 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
 Inleiding
 We zijn benieuwd hoe jij een interactieve, gebruiksvriendelijke applicatie bouwt. De nadruk ligt op gebruikservaring en code kwaliteit, niet op perfectie.
 
