@@ -1,16 +1,69 @@
-.herhaling-scherm {
+.spel-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   padding: 2rem;
-  text-align: center;
+  gap: 2rem;
 }
 
-.reactietijd-scherm {
+.spel-info {
+  display: flex;
+  gap: 3rem;
+}
+
+.info-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.info-item span {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.info-item span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.kleuren-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.kleur-btn {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.kleur-btn.actief {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px currentColor;
+}
+
+.kleur-btn:hover {
+  opacity: 0.9;
+}
+
+.start-btn {
+  padding: 1rem 2rem;
+  background: var(--color-carbon);
+  color: var(--color-white);
+  border: 2px solid var(--color-carbon);
+}
+
+.start-btn:hover {
+  background: var(--color-white);
+  color: var(--color-carbon);
 }
 
