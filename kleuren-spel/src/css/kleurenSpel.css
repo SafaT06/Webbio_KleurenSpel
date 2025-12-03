@@ -13,21 +13,11 @@
   gap: 3rem;
 }
 
-.info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-item span {
-  font-size: 0.875rem;
-  color: #666;
-  text-transform: uppercase;
-}
-
-.info-item span {
-  font-size: 2rem;
-  font-weight: 700;
+.scorebord {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--color-carbon);
+  gap: 0.5rem;
 }
 
 .kleuren-grid {
@@ -62,8 +52,4 @@
   border: 2px solid var(--color-carbon);
 }
 
-.start-btn:hover {
-  background: var(--color-white);
-  color: var(--color-carbon);
-}
 
