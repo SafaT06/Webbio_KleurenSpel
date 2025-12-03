@@ -1,9 +1,14 @@
 import "../../css/General.css";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+
   return (
-    <header className="header">
-      <h1>Kleuren Spel</h1>
+    <header>
+      <h1 onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
+        🎨 Kleurenspel
+      </h1>
     </header>
   );
 }

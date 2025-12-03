@@ -1,14 +1,24 @@
 import "../../css/General.css";
-
+import { ReactComponent as ArrowDown } from "../../ui/arrow_down.svg";
 import { useNavigate } from "react-router-dom";
 
 function StartScherm() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  return <p>Startscherm
-    <button onClick={() => navigate("/kleurherhaling")}>Start Kleurherhaling</button>
-    <button onClick={() => navigate("/reactietijd")}>Start Reactietijd</button>
-  </p>;
+  return (
+    <div className="start-scherm">
+      <h2>Welkom bij het Kleurenspel 🎨</h2>
+      <ArrowDown />
+      <div className="game-buttons">
+        <button className="btn" onClick={() => navigate("/kleurherhaling")}>
+          Kleurherhaling
+        </button>
+        <button className="btn" onClick={() => navigate("/reactietijd")}>
+          Reactietijd
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default StartScherm;

@@ -2,9 +2,9 @@ import "../../css/KleurenSpel.css";
 
 function KleurherhalingSpel() {
   return (
-    <section>
+    <div className="herhaling-scherm">
       <h2>Kleurherhaling</h2>
-    </section>
+    </div>
   );
 }
 

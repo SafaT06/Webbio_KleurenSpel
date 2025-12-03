@@ -2,9 +2,10 @@ import "../../css/KleurenSpel.css";
 
 function ReactietijdSpel() {
   return (
-    <section>
+    <div className="reactietijd-scherm">
       <h2>Kleur Reactietijd</h2>
-    </section>
+      <p>(NOT) Coming soon :)</p>
+    </div>
   );
 }
 

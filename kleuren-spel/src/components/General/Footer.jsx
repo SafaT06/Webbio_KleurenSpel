@@ -3,9 +3,7 @@ import "../../css/General.css";
 function Footer() {
   return (
     <footer>
-      <p>
-        &copy; 2025 Kleuren Spel
-      </p>
+      <p>&copy; 2025 Kleurenspel - Gemaakt met liefde</p>
     </footer>
   );
 }

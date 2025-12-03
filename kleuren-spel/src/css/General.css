@@ -1,16 +1,80 @@
-footer,
 header {
-  background: #000;
-  color: #fff;
-  padding: 1rem;
+  background: var(--color-carbon);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 footer {
-  width: 100%;
-  bottom: 0;
+  background: var(--color-carbon);
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
-header {
-  width: 100%;
-  top: 0;
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.start-scherm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.start-scherm h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-carbon);
+  margin: 0;
+}
+
+.start-scherm p {
+  margin: 0;
+}
+
+.game-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.075rem;
+  border: 2px solid var(--color-carbon);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 550;
+}
+
+.btn {
+  background: var(--color-white);
+  color: var(--color-carbon);
+}
+
+.btn:hover {
+  background: var(--color-carbon);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
